@@ -49,7 +49,8 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
               "Michael Radtke (mradtke@abigale.de)",
               "Carel-J Rischmuller (carel-j.rischmuller@epiuse.com)",
               "Milena Vitali-Charewicz (milo22370@yahoo.com)",
-              "Toru Watanabe (t-wata@cablenet.ne.jp)"                            
+              "Toru Watanabe (t-wata@cablenet.ne.jp)",
+              "Fayez Mehdad (fmehdad@asu.edu)"
  };
     
   JLayeredPane layeredPane;
@@ -65,7 +66,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     catch(Exception e) {
       e.printStackTrace();
     }
-    setSize(400, 500);
+    setSize(400, 700);
   }
   //Component initialization
   private void jbInit() throws Exception  {    
@@ -91,7 +92,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
 
     
     button1.setText(Local.getString("Ok"));
-    button1.setBounds(150, 415, 95, 30);
+    button1.setBounds(150, 515, 95, 30);
     button1.addActionListener(this);
     button1.setPreferredSize(new Dimension(95, 30));
     button1.setBackground(new Color(69, 125, 186));
@@ -103,7 +104,7 @@ public class AppFrame_AboutBox extends JDialog implements ActionListener {
     layeredPane.add(imgLabel, new Integer(1));
     layeredPane.add(lblText, new Integer(2));    
     layeredPane.add(button1, new Integer(2));
-    this.getContentPane().setBackground(new Color(251, 197, 63));
+    this.getContentPane().setBackground(new Color(255, 255, 255));
   }
   //Overridden so we can exit when window is closed
   protected void processWindowEvent(WindowEvent e) {
